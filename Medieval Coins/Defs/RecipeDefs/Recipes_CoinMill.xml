@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Coins: Base Class --> 
+<RecipeDef Name="CoinBase" Abstract="True">
+	<description>Process ingots into coins.</description>
+	<workSpeedStat>SmeltingSpeed</workSpeedStat>
+	<workSkill>Crafting</workSkill>
+	<workSkillLearnFactor>0.25</workSkillLearnFactor>
+	<effectWorking>Smelt</effectWorking>
+	<allowMixingIngredients>false</allowMixingIngredients>	
+	<soundWorking>Recipe_Smelt</soundWorking>
+		<recipeUsers>
+			<li>CoiningMill</li>
+		</recipeUsers>	
+</RecipeDef>
+
+<!-- Gold Coins --> 
+<RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_gold</defName>
+	<workAmount>300</workAmount>		
+	<label>Mill gold coin from gold (100% pure) </label>
+	<jobString>Mill a  50 golden coins from gold plate into gold coins.</jobString>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Gold</li>
+				</thingDefs>
+			</filter>
+			<count>0.5</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>Gold</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<GoldCoin>50</GoldCoin>
+	</products>		
+</RecipeDef> 
+
+ <RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_goldBulk</defName>
+	<workAmount>700</workAmount>		
+	<label>Mill gold coin from gold (100% pure) x10</label>
+	<jobString>Mill a  500 golden coins from gold plate into gold coins.</jobString>	
+	<ingredients>
+
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Gold</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>Gold</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<GoldCoin>500</GoldCoin>
+	</products>		
+</RecipeDef> 
+
+<RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_gold_08</defName>
+	<workAmount>300</workAmount>		
+	<label>Mill gold coin from copper-gold (80% pure) </label>
+	<jobString>Mill a  50 golden coins from copper-gold plate into gold coins.</jobString>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>CopperIngot</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Gold</li>
+				</thingDefs>
+			</filter>
+			<count>0.4</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>CopperIngot</li>
+			<li>Gold</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<GoldCoin>50</GoldCoin>
+	</products>	
+		<researchPrerequisites>
+			<li>AdvancedCoinage</li>
+		</researchPrerequisites>	
+</RecipeDef> 
+
+ <RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_goldBulk_08</defName>
+	<workAmount>700</workAmount>		
+	<label>Mill gold coin from copper-gold (80% pure) x10</label>
+	<jobString>Mill a  500 golden coins from copper-gold plate into gold coins.</jobString>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>CopperIngot</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Gold</li>
+				</thingDefs>
+			</filter>
+			<count>4</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>CopperIngot</li>
+			<li>Gold</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<GoldCoin>500</GoldCoin>
+	</products>
+		<researchPrerequisites>
+			<li>AdvancedCoinage</li>
+		</researchPrerequisites>		
+</RecipeDef> 
+
+<RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_gold_06</defName>
+	<workAmount>300</workAmount>		
+	<label>Mill gold coin from copper-gold (60% pure) </label>
+	<jobString>Mill a  50 golden coins from copper-gold plate into gold coins.</jobString>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>CopperIngot</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Gold</li>
+				</thingDefs>
+			</filter>
+			<count>0.3</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>CopperIngot</li>
+			<li>Gold</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<GoldCoin>50</GoldCoin>
+	</products>
+		<researchPrerequisites>
+			<li>MasterCoinage</li>
+		</researchPrerequisites>		
+</RecipeDef> 
+
+ <RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_goldBulk_06</defName>
+	<workAmount>700</workAmount>		
+	<label>Mill gold coin from copper-gold (60% pure) x10</label>
+	<jobString>Mill a  500 golden coins from copper-gold plate into gold coins.</jobString>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>CopperIngot</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Gold</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>CopperIngot</li>
+			<li>Gold</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<GoldCoin>500</GoldCoin>
+	</products>	
+		<researchPrerequisites>
+			<li>MasterCoinage</li>
+		</researchPrerequisites>	
+</RecipeDef> 
+
+<!-- Silver Coins --> 
+
+<RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_silver</defName>
+	<workAmount>300</workAmount>		
+	<label>Mill silver coin from silver (100% pure) </label>
+	<jobString>Mill a  50 silver coins from silver plate into gold coins.</jobString>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>0.5</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>Silver</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<SilverCoin>50</SilverCoin>
+	</products>		
+</RecipeDef> 
+
+ <RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_silverBulk</defName>
+	<workAmount>700</workAmount>		
+	<label>Mill silver coin from silver (100% pure) x10</label>
+	<jobString>Mill a  500 silver coins from silver plate into gold coins.</jobString>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>Silver</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<SilverCoin>500</SilverCoin>
+	</products>		
+</RecipeDef> 
+
+<RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_silver_08</defName>
+	<workAmount>300</workAmount>		
+	<label>Mill silver coin from tin-silver (80% pure) </label>
+	<jobString>Mill a  50 silver coins from tin-silver plate into gold coins.</jobString>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>TinIngot</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>0.4</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>TinIngot</li>
+			<li>Silver</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<SilverCoin>50</SilverCoin>
+	</products>
+		<researchPrerequisites>
+			<li>AdvancedCoinage</li>
+		</researchPrerequisites>		
+</RecipeDef> 
+
+ <RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_silverBulk_08</defName>
+	<workAmount>700</workAmount>		
+	<label>Mill silver coin from tin-silver (80% pure) x10</label>
+	<jobString>Mill a  500 silver coins from tin-silver plate into gold coins.</jobString>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>TinIngot</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>4</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>TinIngot</li>
+			<li>Silver</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<SilverCoin>500</SilverCoin>
+	</products>		
+		<researchPrerequisites>
+			<li>AdvancedCoinage</li>
+		</researchPrerequisites>
+</RecipeDef> 
+
+<RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_silver_06</defName>
+	<workAmount>300</workAmount>		
+	<label>Mill silver coin from tin-silver (60% pure) </label>
+	<jobString>Mill a  50 silver coins from tin-silver plate into gold coins.</jobString>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>TinIngot</li>
+				</thingDefs>
+			</filter>
+			<count>2</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>0.3</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>TinIngot</li>
+			<li>Silver</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<SilverCoin>50</SilverCoin>
+	</products>		
+		<researchPrerequisites>
+			<li>MasterCoinage</li>
+		</researchPrerequisites>
+</RecipeDef> 
+
+ <RecipeDef ParentName="CoinBase">
+	<defName>MakeCoin_silverBulk_06</defName>
+	<workAmount>700</workAmount>	
+	<label>Mill silver coin from tin-silver (60% pure) x10</label>
+	<jobString>Mill a  500 silver coins from tin-silver plate into gold coins.</jobString>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>TinIngot</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+			<count>3</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>TinIngot</li>
+			<li>Silver</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+		<SilverCoin>500</SilverCoin>
+	</products>
+		<researchPrerequisites>
+			<li>MasterCoinage</li>
+		</researchPrerequisites>		
+</RecipeDef> 
+
+</Defs>

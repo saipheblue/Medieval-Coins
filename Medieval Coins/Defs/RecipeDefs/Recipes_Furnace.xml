@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!-- Copper Ingots --> 
+
+	<RecipeDef ParentName="DankPyon_SmelterBase">
+		<defName>DankPyon_MakeIngots_Copper</defName>
+		<workAmount>100</workAmount>		
+		<label>smelt a copper ore into an ingot</label>
+		<jobString>Smelting copper ore into 1 ingot.</jobString>
+		<targetCountAdjustment>1</targetCountAdjustment>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CopperOre</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Copper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <products>
+      <CopperIngot>1</CopperIngot>
+    </products>	
+		<researchPrerequisites>
+			<li>Copper</li>
+		</researchPrerequisites>	
+  </RecipeDef> 
+  
+  <RecipeDef ParentName="DankPyon_SmelterBase">
+		<defName>DankPyon_MakeIngots_CopperBulk</defName>
+		<workAmount>600</workAmount>		
+		<label>smelt copper ore into ingots x30</label>
+		<jobString>Smelting copper ores into 30 ingots.</jobString>
+		<targetCountAdjustment>30</targetCountAdjustment>
+		<allowMixingIngredients>false</allowMixingIngredients>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CopperOre</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Copper</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <products>
+      <CopperIngot>30</CopperIngot>
+    </products>	
+		<researchPrerequisites>
+			<li>Copper</li>
+		</researchPrerequisites>		
+  </RecipeDef>
+
+  <RecipeDef ParentName="DankPyon_SmelterBase">
+	<defName>DankPyon_MakeIngots_CopperExtraBulk</defName>
+	<workAmount>1200</workAmount>		
+	<label>smelt copper ore into ingots x60</label>
+	<jobString>Smelting copper ore into 60 ingots.</jobString>
+	<targetCountAdjustment>60</targetCountAdjustment>
+	<allowMixingIngredients>false</allowMixingIngredients>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>CopperOre</li>
+				</thingDefs>
+			</filter>
+			<count>60</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>Copper</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+  		<CopperIngot>60</CopperIngot>
+	</products>	
+		<researchPrerequisites>
+			<li>Copper</li>
+		</researchPrerequisites>		
+</RecipeDef>
+
+ <!-- Tin Ingots --> 
+
+ 	<RecipeDef ParentName="DankPyon_SmelterBase">
+		<defName>DankPyon_MakeIngots_Tin</defName>
+		<workAmount>100</workAmount>		
+		<label>smelt a tin ore into an ingot</label>
+		<jobString>Smelting tin ore into 1 ingot.</jobString>
+		<targetCountAdjustment>1</targetCountAdjustment>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TinOre</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>TinOre</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <products>
+      <TinIngot>1</TinIngot>
+    </products>		
+		<researchPrerequisites>
+			<li>Tin</li>
+		</researchPrerequisites>
+  </RecipeDef> 
+  
+  <RecipeDef ParentName="DankPyon_SmelterBase">
+		<defName>DankPyon_MakeIngots_TinBulk</defName>
+		<workAmount>600</workAmount>		
+		<label>smelt tin ore into ingots x30</label>
+		<jobString>Smelting tin ores into 30 ingots.</jobString>
+		<targetCountAdjustment>30</targetCountAdjustment>
+		<allowMixingIngredients>false</allowMixingIngredients>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>TinOre</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>TinOre</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+    <products>
+      <TinIngot>30</TinIngot>
+    </products>	
+		<researchPrerequisites>
+			<li>Tin</li>
+		</researchPrerequisites>	
+  </RecipeDef>
+
+  <RecipeDef ParentName="DankPyon_SmelterBase">
+	<defName>DankPyon_MakeIngots_TinExtraBulk</defName>
+	<workAmount>1200</workAmount>		
+	<label>smelt tin ore into ingots x60</label>
+	<jobString>Smelting tin ore into 60 ingots.</jobString>
+	<targetCountAdjustment>60</targetCountAdjustment>
+	<allowMixingIngredients>false</allowMixingIngredients>	
+	<ingredients>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>TinOre</li>
+				</thingDefs>
+			</filter>
+			<count>60</count>
+		</li>
+	</ingredients>
+	<fixedIngredientFilter>
+		<thingDefs>
+			<li>Tin</li>
+		</thingDefs>
+	</fixedIngredientFilter>
+	<products>
+  		<TinIngot>60</TinIngot>
+	</products>	
+		<researchPrerequisites>
+			<li>Tin</li>
+		</researchPrerequisites>	
+</RecipeDef> 	
+
+</Defs>
+
+ 

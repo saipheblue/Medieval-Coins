@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "DankPyon_MakeOre_IronOre"]/label</xpath>
+				<value>
+					<label>Mine iron ore</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "DankPyon_MakeOre_IronOre"]/workAmount</xpath>
+				<value>
+					<workAmount>900</workAmount>	
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "DankPyon_MakeOre_IronOre"]/jobString</xpath>
+				<value>
+					<jobString>Mining 1 iron ore.</jobString>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName = "DankPyon_MakeOre_IronOre"]/products</xpath>
+				<value>
+					<products>
+						<DankPyon_IronOre>1</DankPyon_IronOre>
+					</products>	
+				</value>
+			</li>			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "DankPyon_MakeOre_SilverOre"]/label</xpath>
+				<value>
+					<label>Mine silver ore</label>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "DankPyon_MakeOre_SilverOre"]/workAmount</xpath>
+				<value>
+					<workAmount>600</workAmount>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "DankPyon_MakeOre_SilverOre"]/jobString</xpath>
+				<value>
+					<jobString>Mining 1 silver ore.</jobString>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName = "DankPyon_MakeOre_SilverOre"]/products</xpath>
+				<value>
+					<products>
+						<DankPyon_SilverOre>1</DankPyon_SilverOre>
+					</products>	
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
