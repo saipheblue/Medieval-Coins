@@ -10,7 +10,7 @@
       <texPath>Production/CoinMill/CoinMill</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2,1.5)</drawSize>
+      <drawSize>(2,2)</drawSize>
       <drawRotated>false</drawRotated>
 		</graphicData>
 
