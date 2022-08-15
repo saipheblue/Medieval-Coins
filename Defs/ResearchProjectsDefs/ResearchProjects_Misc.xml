@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=========================== Alchemy ==============================-->
+
+  <ResearchProjectDef>
+    <defName>Copper</defName>
+    <label>copper</label>
+    <description>Discover the basics of metallurgy and manufacture copper</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>17</researchViewX>
+		<researchViewY>2.5</researchViewY>
+    <prerequisites>
+      <li>DankPyon_Alchemy</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>Tin</defName>
+    <label>tin</label>
+    <description>iscover the basics of metallurgy and manufacture tin</description>
+    <baseCost>1000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>18</researchViewX>
+		<researchViewY>2.5</researchViewY>
+    <prerequisites>
+      <li>DankPyon_Alchemy</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
+  
+  <!--=========================== Coinage ==============================-->
+
+  <ResearchProjectDef>
+    <defName>Coinage</defName>
+    <label>coinage</label>
+    <description>Discover the basics of coinage</description>
+    <baseCost>3000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>13</researchViewX>
+		<researchViewY>3.2</researchViewY>
+    <hiddenPrerequisites>
+      <li>DankPyon_Steel</li>
+    </hiddenPrerequisites>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>AdvancedCoinage</defName>
+    <label>Advanced Coinage</label>
+    <description>Learn how to make a coin by mixing different types of ingots</description>
+    <baseCost>4000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>14</researchViewX>
+		<researchViewY>3.6</researchViewY>
+    <prerequisites>
+      <li>Coinage</li>
+      <li>Copper</li>
+      <li>Tin</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>MasterCoinage</defName>
+    <label>Master Coinage</label>
+    <description>Learn how to master the art of making coins</description>
+    <baseCost>5000</baseCost>
+    <tab>DankPyon_MedievalResearchTab</tab>
+    <techLevel>Medieval</techLevel>
+		<researchViewX>15</researchViewX>
+		<researchViewY>3.6</researchViewY>
+    <prerequisites>
+      <li>AdvancedCoinage</li>
+    </prerequisites>    
+  </ResearchProjectDef>
+
+  
+</Defs>

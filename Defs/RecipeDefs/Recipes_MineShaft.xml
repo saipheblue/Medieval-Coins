@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- ========== Ores ==========-->
+<RecipeDef ParentName="DankPyon_MineShaftBase">
+	<defName>DankPyon_MakeOre_CopperOre</defName>
+	<description>Mine deep down underground to obtain copper ore</description>
+	<workAmount>600</workAmount>		
+	<label>mine copper ore</label>
+	<jobString>Mining 1 copper ore.</jobString>
+	<products>
+  		<CopperOre>1</CopperOre>
+	</products>		
+</RecipeDef> 
+
+<RecipeDef ParentName="DankPyon_MineShaftBase">
+	<defName>DankPyon_MakeOre_CopperOreBulk</defName>
+	<description>Mine deep down underground to obtain copper ore</description>
+	<workAmount>3000</workAmount>		
+	<label>mine copper ore x5</label>
+	<jobString>Mining 5 copper ores.</jobString>
+	<products>
+  		<CopperOre>5</CopperOre>
+	</products>		
+</RecipeDef> 
+
+<RecipeDef ParentName="DankPyon_MineShaftBase">
+	<defName>DankPyon_MakeOre_TinOre</defName>
+	<description>Mine deep down underground to obtain tin ore</description>
+	<workAmount>500</workAmount>		
+	<label>mine tin ore</label>
+	<jobString>Mining 1 tin ore.</jobString>
+	<products>
+  		<TinOre>1</TinOre>
+	</products>		
+</RecipeDef> 
+
+<RecipeDef ParentName="DankPyon_MineShaftBase">
+	<defName>DankPyon_MakeOre_TinOreBulk</defName>
+	<description>Mine deep down underground to obtain tin ore</description>
+	<workAmount>2500</workAmount>		
+	<label>mine tin ore x5</label>
+	<jobString>Mining 5 tin ore.</jobString>
+	<products>
+  		<TinOre>5</TinOre>
+	</products>		
+</RecipeDef> 
+
+</Defs>

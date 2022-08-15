@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>CoiningMill</defName>
+		<label>Coining mill</label>
+		<thingClass>Building_WorkTable</thingClass>
+		<description>A small coining mill for making coins.</description>
+		<graphicData>
+      <texPath>Production/CoinMill/CoinMill</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <drawRotated>false</drawRotated>
+		</graphicData>
+
+    		<costList>
+      		<WoodLog>45</WoodLog>
+                <DankPyon_ComponentBasic>2</DankPyon_ComponentBasic>
+                <Steel>30</Steel>
+    		</costList>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+    <recipes>
+      <li>MakeCoin</li>
+
+    </recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<designationCategory>Production</designationCategory>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+              <li>DankPyon_Grinder</li>
+		    			<li>DankPyon_QuenchingBucket</li>
+		     			<li>DankPyon_ToolRack</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		
+    <researchPrerequisites>
+        <li>Coinage</li>
+    </researchPrerequisites>
+
+	</ThingDef>
+
+</Defs>
