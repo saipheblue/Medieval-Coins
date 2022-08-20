@@ -21,7 +21,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Copper</li>
+				<li>CopperOre</li>
 			</thingDefs>
 		</fixedIngredientFilter>
     <products>
@@ -172,7 +172,7 @@
 	</ingredients>
 	<fixedIngredientFilter>
 		<thingDefs>
-			<li>Tin</li>
+			<li>TinOre</li>
 		</thingDefs>
 	</fixedIngredientFilter>
 	<products>

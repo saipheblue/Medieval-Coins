@@ -13,7 +13,7 @@
       <texPath>Resources/GoldCoin</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <resourceReadoutPriority>Second</resourceReadoutPriority>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Metal_Drop</soundDrop>
     <statBases>
@@ -50,8 +50,8 @@
         <Beauty>7</Beauty>
         <Flammability>0.42</Flammability>
       </statFactors>
-    <smeltable>true</smeltable>
     </stuffProps>
+    <smeltable>true</smeltable>
     <tradeTags>
       <li>Art</li>
     </tradeTags>
@@ -93,7 +93,6 @@
     <deepCountPerPortion>45</deepCountPerPortion>
     <deepLumpSizeRange>20~30</deepLumpSizeRange>
     <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
     <stuffProps>
       <stuffAdjective>coin</stuffAdjective>
       <commonality>1</commonality>
@@ -108,6 +107,7 @@
         <Flammability>0.42</Flammability>
       </statFactors>
     </stuffProps>
+    <smeltable>true</smeltable>
     <tradeTags>
       <li>Art</li>
     </tradeTags>
